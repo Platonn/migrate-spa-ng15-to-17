@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run migrate-spa-ng15-to-17:serve-ssr",
+    "dev:ssr": "NODE_TLS_REJECT_UNAUTHORIZED=0 ng run migrate-spa-ng15-to-17:serve-ssr",
     "serve:ssr": "node dist/migrate-spa-ng15-to-17/server/main.js",
     "build:ssr": "ng build && ng run migrate-spa-ng15-to-17:server",
     "prerender": "ng run migrate-spa-ng15-to-17:prerender"
